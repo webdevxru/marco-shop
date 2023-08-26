@@ -42,13 +42,12 @@
   display: flex;
   &__link {
     position: relative;
-
   }
   &__link + .user-nav__link {
     padding-left: 25px;
   }
 
-  &__num{
+  &__num {
     position: absolute;
     right: -9px;
     top: -14px;
@@ -62,5 +61,103 @@
     text-align: center;
   }
 }
+.footer {
+  background: $bg;
+}
 
+.footer-top {
+  padding: 70px 0 40px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  &__contact {
+    width: 250px;
+    margin-right: 30px;
+  }
+  &__nav {
+    width: 170px;
+    margin-right: 30px;
+  }
+  &__item-form {
+    max-width: 470px;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__address,
+  &__email,
+  &__phone {
+    // line-height: 36px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  &__text {
+    margin-bottom: 25px;
+  }
+  &__input {
+    background-color: #fff;
+    max-width: 320px;
+    width: 100%;
+    padding: 12px 10px 12px 15px;
+    border: none;
+    &::placeholder {
+      color: $default;
+      font-size: 16px;
+    }
+  }
+  &__form-btn {
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    background: $accent;
+    padding: 12px 18px;
+    cursor: pointer;
+    box-shadow: $shadow-red;
+  }
+  &__top__logo {
+    display: block;
+    margin-bottom: 33px;
+  }
+  &__social-list {
+    display: flex;
+    margin-top: 30px;
+  }
+  &__social-item + .footer-top__social-item {
+    padding-left: 18px;
+  }
+  &__social-link {
+    transition: all 0.3s;
+    path {
+      fill: $default;
+    }
+    &:hover path {
+      fill: $accent;
+    }
+  }
+  &__title {
+    margin-bottom: 40px;
+    color: $title;
+    @extend %roboto-500;
+    font-size: 22px;
+  }
+  &__link {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+}
+
+
+.footer-bottom{
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  &__accept-img{
+   display: inline;
+   vertical-align: middle;
+   margin-left: 25px;
+  }
+
+}
 @import "media";
