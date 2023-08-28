@@ -4,30 +4,35 @@ $default: #8d8d8d;
 $bg: #f6f6f6;
 $shadow-red: 0 7px 20px 0 rgba(255, 17, 48, 0.3);
 
-
-%quicksand-400{
-    font-family: 'Quicksand-Regular', sans-serif;
-    font-weight: 400;
+%quicksand-400 {
+  font-family: "Quicksand-Regular", sans-serif;
+  font-weight: 400;
 }
 
-%quicksand-500{
-    font-family: 'Quicksand-Medium', sans-serif;
-    font-weight: 500;
+%quicksand-500 {
+  font-family: "Quicksand-Medium", sans-serif;
+  font-weight: 500;
 }
-%roboto-400{
-    font-family: 'Roboto-Regular', sans-serif;
-    font-weight: 400;
+%roboto-400 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
 }
-%roboto-500{
-    font-family: 'Roboto-Medium', sans-serif;
-    font-weight: 500;
+%roboto-500 {
+  font-family: "Roboto-Medium", sans-serif;
+  font-weight: 500;
 }
-%roboto-700{
-    font-family: 'Roboto-Bold', sans-serif;
-    font-weight: 700;
+%roboto-700 {
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: 700;
 }
 
-
-
+%btn {
+  padding: 14px 25px;
+  text-transform: uppercase;
+  box-shadow: 0 7px 20px 0 rgba(255, 17, 48, 0.3);
+  background: $accent;
+  color: #fff;
+  @extend %roboto-400;
+}
 
 // font-family: 'Roboto', sans-serif;
